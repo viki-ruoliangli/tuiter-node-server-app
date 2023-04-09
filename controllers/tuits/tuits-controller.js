@@ -12,6 +12,7 @@ const createTuit = async (req, res) => {
 const findTuits = async (req, res) => {
   try {
     const tuits = await tuitsDao.findTuits();
+    console.log("here 3333" + tuits.length);
     res.json(tuits);
   } catch (err) {
     res.sendStatus(503);
