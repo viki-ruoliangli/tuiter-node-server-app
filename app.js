@@ -9,12 +9,9 @@ import TuitsController
 
 import mongoose from "mongoose";
 
-// const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
-//     ||'mongodb://127.0.0.1:27017/tuiter';
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
+    ||'mongodb://127.0.0.1:27017/tuiter';
 
-console.log("here1")
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING;
-console.log("here2")
 
 mongoose.connect(CONNECTION_STRING);
 
